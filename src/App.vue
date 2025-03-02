@@ -4,7 +4,14 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import {ref, onMounted} from 'vue'
+import LoadingBookingItem from '@/components/LoadingBookingItem.vue'
+import BookingItem from '@/components/BookingItem.vue'
+import EventList from '@/components/EventList.vue'
+
+
+
 
 </script>
 

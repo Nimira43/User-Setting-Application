@@ -1,4 +1,6 @@
+type TabKey = 'General' | 'Notifications' | 'Privacy'
+
 export interface Tab {
-  key: string
+  key: TabKey
   label: string
 }

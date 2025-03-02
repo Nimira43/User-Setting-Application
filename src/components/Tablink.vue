@@ -3,11 +3,11 @@
 </template>
 
 <script setup lang='ts'>
+import type { Tab } from '@/types'
+
 defineProps<{
   currentTab: string
-  tab: {
-    
-  }
+  tab: Tab
 }>()
 
 defineEmits<{

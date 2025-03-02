@@ -11,5 +11,7 @@ defineProps<{
   }
 }>()
 
-
+defineEmits<{
+  click: []
+}>()
 </script>

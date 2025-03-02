@@ -1,6 +1,6 @@
 <script setup lang='ts'>
 import { ref } from 'vue'
-import type { Tab } from './types'
+import type { Tab, TabKey } from './types'
 
 const tabs: Tab[] = [
   {
@@ -17,7 +17,7 @@ const tabs: Tab[] = [
   }
 ]
 
-const currentTab = ref<string>('')
+const currentTab = ref<TabKey>('General')
 
 </script>
 

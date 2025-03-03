@@ -15,7 +15,7 @@ export default {
         'grey-medium': '#999',
         'grey-light': '#ccc',
         'grey-light': '#eee'
-      }
+      },
     },
   },
   plugins: [],

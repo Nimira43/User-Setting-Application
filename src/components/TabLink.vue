@@ -1,5 +1,9 @@
 <template>
-  Link
+  <button
+    :class="{'p-4 border-b-2 uppercase font-medium': true}"
+  >
+    {{  tab.label }}
+  </button>
 </template>
 
 <script setup lang='ts'>

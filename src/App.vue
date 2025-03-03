@@ -1,11 +1,14 @@
 <template>
   <main class="max-w-2xl mx-auto px-4">
     <nav class="text-center text-main border-b border-medium mb-4">
-      <ul class="flex-flex-wrap">
-        <li 
+      <ul class="flex flex-wrap">
+        <li
           v-for="tab in tabs" :key="tab.key"
         >
-          <TabLink />
+          <TabLink
+            :tab="tab"
+            :currentTab="currentTab"
+          />
         </li>
       </ul>
     </nav>
@@ -17,7 +20,7 @@
 <script setup lang='ts'>
 import { ref } from 'vue'
 import type { Tab, TabKey } from './types'
-import TabLink from '@/components/Tablink.vue'
+import TabLink from '@/components/TabLink.vue'
 
 const tabs: Tab[] = [
   {
